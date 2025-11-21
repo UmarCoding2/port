@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Olivia Kate Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="portfolio.css">
+  
+</head>
+
+<body>
+  
+    <header>
+        <a href="#home" class="logo">
+            Umar <span class="red">Portfolio</span>
+        </a>
+        <!-- HAMBURGER BUTTON -->
+        <button class="hamburger" id="hamburger-menu" aria-label="Toggle Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#services-section">Services</a>
+            <a href="#portfolio-section">Portfolio</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="image-container">
+            <!-- Keeping the original image reference -->
+            <img src="New folder/full-shot-ninja-wearing-equipment (1).jpg" alt="Stylized anime eyes illustration" />
+        </div>
+
+        <div class="text-content">
+            <div class="intro">
+                Hey I'm <span class="name">Umar</span>
+            </div>
+            <div class="title">
+                I'm a <span class="highlight" id="element"></span>
+            </div>
+            <p>
+                I'm a passionate developer focused on building intuitive, beautiful, and highly functional web
+                applications. Let's create something amazing together.
+            </p>
+            <div class="social-icons">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#contact-section" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; color: #b3b3b3;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis
+                expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem
+                necessitatibus tempora. I am dedicated to continuous learning and applying the latest technologies to solve
+                real-world problems.</p>
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-bar" data-level="90">
+                <h3>HTML & CSS <span class="skill-percentage">90%</span></h3>
+                <div class="bar-wrapper">
+                    <div class="bar-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar" data-level="80">
+                <h3>JavaScript (ES6+) <span class="skill-percentage">80%</span></h3>
+                <div class="bar-wrapper">
+                    <div class="bar-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar" data-level="70">
+                <h3>React / Vue <span class="skill-percentage">70%</span></h3>
+                <div class="bar-wrapper">
+                    <div class="bar-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar" data-level="85">
+                <h3>UI/UX Design <span class="skill-percentage">85%</span></h3>
+                <div class="bar-wrapper">
+                    <div class="bar-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar" data-level="75">
+                <h3>Node.js / Express <span class="skill-percentage">75%</span></h3>
+                <div class="bar-wrapper">
+                    <div class="bar-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar" data-level="60">
+                <h3>Database (SQL/NoSQL) <span class="skill-percentage">60%</span></h3>
+                <div class="bar-wrapper">
+                    <div class="bar-progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-section">
+        <h2>My Services</h2>
+        <div class="services-container">
+            <div class="service-card" data-index="0">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/code.png" alt="Web Development Icon" />
+                </div>
+                <h3>Web Development</h3>
+                <p>Building responsive, scalable, and high-performance websites and web applications.</p>
+            </div>
+
+            <div class="service-card active" data-index="1">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/paint-palette.png" alt="UI/UX Design Icon" />
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive, engaging, and user-friendly interfaces for all devices.</p>
+            </div>
+
+            <div class="service-card" data-index="2">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/server.png" alt="Backend Development Icon" />
+                </div>
+                <h3>Backend Development </h3>
+                <p>Developing robust server-side logic and managing databases for seamless operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio-section">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/250?random=1" alt="Project 1 Thumbnail" />
+                <div class="portfolio-overlay">
+                    <h4>E-commerce Platform</h4>
+                    <p>Full-stack web application with secure payment integration.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/250?random=2" alt="Project 2 Thumbnail" />
+                <div class="portfolio-overlay">
+                    <h4>SaaS Dashboard</h4>
+                    <p>Responsive admin dashboard built with React and custom components.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/250?random=3" alt="Project 3 Thumbnail" />
+                <div class="portfolio-overlay">
+                    <h4>Mobile App Landing Page</h4>
+                    <p>High-conversion landing page designed for a new mobile application.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/250?random=4" alt="Project 4 Thumbnail" />
+                <div class="portfolio-overlay">
+                    <h4>Blog & CMS</h4>
+                    <p>Custom content management system using Node.js and MongoDB.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/250?random=5" alt="Project 5 Thumbnail" />
+                <div class="portfolio-overlay">
+                    <h4>Design System Kit</h4>
+                    <p>A comprehensive set of reusable components and design guidelines.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/250?random=6" alt="Project 6 Thumbnail" />
+                <div class="portfolio-overlay">
+                    <h4>Data Visualization App</h4>
+                    <p>An interactive data tool built with Vue.js and a charting library.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <p>
+                Ready to start your next project? Send me a message and let's discuss how I can help bring your vision
+                to life.
+            </p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <input type="text" name="subject" placeholder="Subject" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div style="text-align: center; padding: 20px 0; background-color: #000; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <p style="font-size: 12px; color: #757575;">&copy; 2025 Olivia Kate. All rights reserved.</p>
+    </div>
+
+    <script src="potfolio.js"></script>
+
+    <script>
+   
+    </script>
+</body>
+
+</html>
